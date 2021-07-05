@@ -110,7 +110,13 @@ position: absolute;
 right: 300px;
 top: 50px;
 }
-
+.butter
+{
+  height: 50px;
+  width: 50px;
+  transform: rotate(30deg);
+  margin: auto 500px auto 10px ;
+}
 .Developer
 {
   width: 20%;
