@@ -116,7 +116,20 @@ top: 50px;
   width: 50px;
   transform: rotate(30deg);
   margin: auto 500px auto 10px ;
+  /*animation: butterfly;
+  animation-direction: alternate-reverse;*/
+  transition: transform 5s;
+  opacity: 0.9;
 }
+.butter:hover
+{
+  transform: rotate(360deg);
+}
+/*this part is not working*/
+/*@keyframes butterfly{
+ from{ transform: rotate(180deg);}
+ to{transform: rotate(360deg);}
+}*/
 .Developer
 {
   width: 20%;
@@ -182,15 +195,27 @@ hr{
   padding: 15px 40px 15px 40px;
   text-decoration: none;
   margin: 30px auto;
+
 }
 
 .btn:hover {
   background: #3cb0fd;
   text-decoration: none;
+
 }
+
 .copyright
 {
+  width: 200px;
   margin: 40px auto 0 auto;
   font-size: x-small;
   color: #FFF8D9;
+  animation-name: copy;
+  animation-duration: 10s;
+}
+@keyframes copy{
+from{ background-color: red;}
+to{background-color: green;}
+
+  }
 }
